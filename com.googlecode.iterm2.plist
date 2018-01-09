@@ -246,12 +246,26 @@
 			<key>Text</key>
 			<string>AF8169CA-F242-4CF9-92C6-B225A2D31B99</string>
 		</dict>
+		<key>0x76-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>41</integer>
+			<key>Text</key>
+			<string>{"ConvertUnicodePunctuation":true,"WaitForPrompts":false,"Substitution":"","EscapeForShell":false,"Base64":false,"TabStopSize":4,"Delay":0.01,"RemoveNewlines":false,"Regex":"","ConvertNewlines":true,"TabTransform":0,"BracketAllowed":true,"UseRegexSubstitution":false,"ChunkSize":1024,"RemoveControls":true}</string>
+		</dict>
 		<key>0x76-0x80000</key>
 		<dict>
 			<key>Action</key>
 			<integer>41</integer>
 			<key>Text</key>
 			<string>{"ConvertUnicodePunctuation":true,"WaitForPrompts":false,"Substitution":"","EscapeForShell":false,"Base64":false,"TabStopSize":4,"Delay":0.002511886941337573,"RemoveNewlines":false,"Regex":"","ConvertNewlines":true,"TabTransform":0,"BracketAllowed":true,"UseRegexSubstitution":false,"ChunkSize":4096,"RemoveControls":true}</string>
+		</dict>
+		<key>0x77-0x80000</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Text</key>
+			<string>Close Terminal Window</string>
 		</dict>
 		<key>0x7b-0xa0000</key>
 		<dict>
@@ -382,7 +396,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1364 33 445 77 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1763 2030 937 465 704 1200 2560 1440 </string>
+	<string>1763 2114 796 473 704 1200 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>367 1868 650 399 -337 1200 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
