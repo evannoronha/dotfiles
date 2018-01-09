@@ -1,0 +1,63 @@
+
+[core]
+        editor = vim
+        pager = less -x4
+        autocrlf = input
+        whitespace = trailing-space,space-before-tab,indent-with-non-tab,tab-in-indent,cr-at-eol
+
+[color]
+        ui = true
+        grep = always
+        interactive = always
+
+[alias]
+        unadd = reset HEAD
+# Nice graph of the history
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+# Nice graph of the history that includes HEAD and the upstream branch
+        lgo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --boundary --abbrev-commit --date=relative --full-history ...@{u}
+        last = log --no-pager -20 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        staged = diff --cached
+        c = commit
+        co = checkout
+        st = status
+        b = branch
+        d = diff
+        ds = diff --cached
+        dc = diff --cached
+        # Checkout the current commit in a detached state
+        detach = checkout HEAD@{0}
+        # add to index hunk by hunk
+        ap = add -p
+        # revert modifications hunk by hun
+        cop = checkout -p
+        # unadd from index hunk by hun
+        unap = reset HEAD -p
+        # git log with full diff and lots of context
+        logg = log -U10 --decorate
+        # show diffs for stash list
+        stashes = reflog show --stat stash
+        stashdiff = reflog show -p stash
+        # show the hash of HEAD
+        head = rev-parse HEAD
+        olog = log --oneline
+        plog = log -p
+        alias = config --get-regexp ^alias\\.
+        uncommit = reset --soft HEAD^
+        unstage = reset HEAD
+
+[diff]
+        noprefix = true
+        indentHeuristic = true
+
+# Push only the current branch by default
+[push]
+        default = current
+
+# Setup new branches and tracking branches to pull using rebase
+[branch]
+        autosetuprebase = always
+
+[pull]
+        rebase = preserve
+
