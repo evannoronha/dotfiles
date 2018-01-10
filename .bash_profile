@@ -35,7 +35,8 @@ C_BG_CYAN="\[\033[46m\]"
 C_BG_LIGHTGRAY="\[\033[47m\]"
 
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-      [ -r "$file" ] && [ -f "$file" ] && source "$file";
+   echo "source $file";
+   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
