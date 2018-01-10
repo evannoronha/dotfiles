@@ -9,13 +9,13 @@ if [ "$1" != "--quick" ]; then
 fi;
 
 function doIt() {
-   ln -sf gitconfig /etc/gitconfig
-   ln -sf tmux.conf /etc/tmux.conf
+   ln -sf ./gitconfig /etc/gitconfig
+   ln -sf ./tmux.conf /etc/tmux.conf
 
-   ln -sf .bash_profile ~/.bash_profile
-   ln -sf .bashrc ~/ ~/.bashrc
-   ln -sf .bash_git ~/.bash_git
-   ln -sg .bash_aliases ~/.bash_aliases
+   ln -sf ./.bash_profile ~/.bash_profile
+   ln -sf ./.bashrc ~/ ~/.bashrc
+   ln -sf ./.bash_git ~/.bash_git
+   ln -sg ./.bash_aliases ~/.bash_aliases
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
