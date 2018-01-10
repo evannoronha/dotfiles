@@ -24,8 +24,9 @@ NUL="\[\e[0m\]"
 
 # Show non-zero exit-code as a red "E:{code}"
 EXIT="FOO=\$?; [ ! \$FOO = 0 ] && echo -ne \"${RED}E:\$FOO${NUL}\""
-export PS1="${GRE}\u ${CYA}\t${YEL}\$(__git_ps1 \" (%s)\") ${BLU}\h ${PUR}\w${NUL} \`$EXIT\`\n $  "
-export PS1="\[\033[44m\]\[\033[1;37m\] LOCAL \[\033[m\] $PS1"
 
-# Automatically attach to a tmux session
-if [ -z ${TMUX+x} ]; then tmux attach; fi;
+export PS1="${GRE}\u ${CYA}\t${YEL}\$(__git_ps1 \" (%s)\") ${PUR}\w${NUL} \`$EXIT\`\n $  "
+
+export PS1="\[\033[44m\]\[\033[1;37m\] \h \[\033[m\] $PS1"
+
+
