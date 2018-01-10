@@ -265,7 +265,7 @@
 			<key>Action</key>
 			<integer>25</integer>
 			<key>Text</key>
-			<string>Close Terminal Window</string>
+			<string>Close</string>
 		</dict>
 		<key>0x7b-0xa0000</key>
 		<dict>
@@ -396,9 +396,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1364 33 445 77 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1763 2114 796 473 704 1200 2560 1440 </string>
+	<string>1764 2114 796 473 704 1200 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>367 1868 650 399 -337 1200 2560 1418 </string>
+	<string>1414 1771 994 847 704 1200 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>846 550 570 473 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
