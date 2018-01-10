@@ -15,7 +15,7 @@ while read line; do
   
    if [[ $line == "group"* ]]; then
       groupname=`echo $line | cut -d " " -f 2`
-      exe dnf groupinstall -y $line
+      exe dnf groupinstall -y $groupname
    else
       exe dnf install -y $line
    fi
