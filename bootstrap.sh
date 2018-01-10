@@ -7,13 +7,13 @@ git pull origin master;
 /bin/bash install-apps.sh
 
 function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
+   ln -sf gitconfig /etc/gitconfig
+   ln -sf tmux.conf /etc/tmux.conf
+
+   ln -sf .bash_profile ~/.bash_profile
+   ln -sf .bashrc ~/ ~/.bashrc
+   ln -sf .bash_git ~/.bash_git
+   ln -sg .bash_aliases ~/.bash_aliases
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -26,6 +26,7 @@ else
 	fi;
 fi;
 unset doIt;
+
 
 source ~/.bash_profile
 /bin/bash configure-git.sh
