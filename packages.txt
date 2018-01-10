@@ -1,0 +1,89 @@
+## Git ##
+git
+
+## Essentials
+group editors
+neovim
+tmux
+tmux-powerline
+group standard
+
+## Languages / Engines / Package Managers
+group php
+group perl
+group python-devel
+group python-web
+group c-development
+group rubyonrails
+group development-libs
+group development-tools
+java-development
+java
+nodejs
+npm
+golang
+gcc gcc-c++
+
+
+## OS/Networking Utilities
+htop
+netstat
+dig
+wget
+group security-lab
+
+
+## Etc
+expect
+ImageMagick
+ImageMagick-devel
+pwgen
+whois
+
+## DB 
+group mariadb
+group mongodb
+
+## Servers
+group haproxy
+group web-server   
+nginx
+httpd
+httpd-devel
+certbot
+varnish
+varnish-libs varnish-docs varnish-libs-devel
+
+## Containers
+group container-management
+group vagrant
+
+ Command Line   : install -y httpd
+ Command Line   : install -y httpd-devel
+ Command Line   : install -y GeoIP mod_geoip
+ Command Line   : -y install glibc-langpack*
+ Command Line   : install percona-toolkit -y
+ Command Line   : install -y sphinx
+ Command Line   : install -y mytop
+ Command Line   : install -y certbot
+ Command Line   : install -y haproxy
+ Command Line   : install -y bison
+ Command Line   : install -y icu libicu cyrus-sasl libc-client libmcrypt
+ libtidy mhash
+ Command Line   : install -y php-7.1.0_5.f25_x86_64.rpm
+ Command Line   : install -y ntp ntpdate ntp-doc
+ Command Line   : install -y fontconfig freetype freetype-devel
+ fontconfig-devel libstdc++
+ Command Line   : -y install cairo cairo-devel cairomm-devel
+ libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel
+ Command Line   : install -y memcached-1.4.39
+ Command Line   : install -y zlib-devel libmemcached-devel
+ Command Line   : install -y ImageMagick
+ Command Line   : install -y ImageMagick-devel
+ Command Line   : install -y GraphicsMagick
+ Command Line   : -y install nfs-utils
+ Command Line   : install -y poppler-utils
+ Command Line   : install -y python3-pygments yum-utils ncdu htop iotop atop
+ asciidoc xmlto
+ Command Line   : install -y jq
+ Command Line   : install -y tmux
