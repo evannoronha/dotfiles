@@ -4,7 +4,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
-/bin/bash install-apps.sh
+if [ "$1" != "--quick" ]; then
+   /bin/bash install-apps.sh
+fi;
 
 function doIt() {
    ln -sf gitconfig /etc/gitconfig
