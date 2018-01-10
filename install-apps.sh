@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# exe() { echo "> $@" ; "$@" ; }
- exe() { echo "> $@" ; }
+exe() { echo "> $@" ; "$@" ; }
 
 sudo -v
 
