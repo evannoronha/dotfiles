@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+GITSOURCE=`git rev-parse --show-toplevel`;
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
@@ -9,13 +10,13 @@ if [ "$1" != "--quick" ]; then
 fi;
 
 function doIt() {
-   ln -sf ./gitconfig /etc/gitconfig
-   ln -sf ./tmux.conf /etc/tmux.conf
+   cp "${GITSOURCE}"/gitconfig /etc/gitconfig
+   cp "${GITSOURCE}"/tmux.conf /etc/tmux.conf
 
-   ln -sf ./.bash_profile ~/.bash_profile
-   ln -sf ./.bashrc ~/ ~/.bashrc
-   ln -sf ./.bash_git ~/.bash_git
-   ln -sg ./.bash_aliases ~/.bash_aliases
+   cp "${GITSOURCE}"/.bash_profile ~/.bash_profile
+   cp "${GITSOURCE}"/.bashrc ~/ ~/.bashrc
+   cp "${GITSOURCE}"/.bash_git ~/.bash_git
+   cp "${GITSOURCE}"/.bash_aliases ~/.bash_aliases
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
